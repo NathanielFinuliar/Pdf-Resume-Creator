@@ -1,0 +1,14 @@
+C:\Users\nathan\source\repos\Pdf-Resume-Creator\bin\Debug\Pdf-Resume-Creator.exe.config
+C:\Users\nathan\source\repos\Pdf-Resume-Creator\bin\Debug\Pdf-Resume-Creator.exe
+C:\Users\nathan\source\repos\Pdf-Resume-Creator\bin\Debug\Pdf-Resume-Creator.pdb
+C:\Users\nathan\source\repos\Pdf-Resume-Creator\bin\Debug\Newtonsoft.Json.dll
+C:\Users\nathan\source\repos\Pdf-Resume-Creator\bin\Debug\Newtonsoft.Json.xml
+C:\Users\nathan\source\repos\Pdf-Resume-Creator\obj\Debug\Pdf-Resume-Creator.csproj.AssemblyReference.cache
+C:\Users\nathan\source\repos\Pdf-Resume-Creator\obj\Debug\Pdf-Resume-Creator.csproj.SuggestedBindingRedirects.cache
+C:\Users\nathan\source\repos\Pdf-Resume-Creator\obj\Debug\Pdf_Resume_Creator.Form1.resources
+C:\Users\nathan\source\repos\Pdf-Resume-Creator\obj\Debug\Pdf_Resume_Creator.Properties.Resources.resources
+C:\Users\nathan\source\repos\Pdf-Resume-Creator\obj\Debug\Pdf-Resume-Creator.csproj.GenerateResource.cache
+C:\Users\nathan\source\repos\Pdf-Resume-Creator\obj\Debug\Pdf-Resume-Creator.csproj.CoreCompileInputs.cache
+C:\Users\nathan\source\repos\Pdf-Resume-Creator\obj\Debug\Pdf-Resume-Creator.csproj.CopyComplete
+C:\Users\nathan\source\repos\Pdf-Resume-Creator\obj\Debug\Pdf-Resume-Creator.exe
+C:\Users\nathan\source\repos\Pdf-Resume-Creator\obj\Debug\Pdf-Resume-Creator.pdb
