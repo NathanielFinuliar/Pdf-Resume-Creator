@@ -57,6 +57,7 @@
             this.CnvrtrLbl.TabIndex = 2;
             this.CnvrtrLbl.Text = "CONVERT";
             this.CnvrtrLbl.UseVisualStyleBackColor = false;
+            this.CnvrtrLbl.Click += new System.EventHandler(this.CnvrtrLbl_Click);
             // 
             // Form1
             // 
