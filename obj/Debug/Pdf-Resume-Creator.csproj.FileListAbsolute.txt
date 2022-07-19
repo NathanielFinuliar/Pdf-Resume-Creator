@@ -18,3 +18,13 @@ C:\Users\nathan\source\repos\Pdf-Resume-Creator\bin\Debug\PdfSharp.xml
 C:\Users\nathan\source\repos\Pdf-Resume-Creator\bin\Debug\PdfSharp.Charting.xml
 C:\Users\nathan\source\repos\Pdf-Resume-Creator\bin\Debug\de\PdfSharp.resources.dll
 C:\Users\nathan\source\repos\Pdf-Resume-Creator\bin\Debug\de\PdfSharp.Charting.resources.dll
+C:\Users\nathan\source\repos\Pdf-Resume-Creator\bin\Debug\System.Buffers.dll
+C:\Users\nathan\source\repos\Pdf-Resume-Creator\bin\Debug\System.Memory.dll
+C:\Users\nathan\source\repos\Pdf-Resume-Creator\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\nathan\source\repos\Pdf-Resume-Creator\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\nathan\source\repos\Pdf-Resume-Creator\bin\Debug\System.Text.Encoding.CodePages.dll
+C:\Users\nathan\source\repos\Pdf-Resume-Creator\bin\Debug\System.Buffers.xml
+C:\Users\nathan\source\repos\Pdf-Resume-Creator\bin\Debug\System.Memory.xml
+C:\Users\nathan\source\repos\Pdf-Resume-Creator\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\nathan\source\repos\Pdf-Resume-Creator\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\nathan\source\repos\Pdf-Resume-Creator\bin\Debug\System.Text.Encoding.CodePages.xml
