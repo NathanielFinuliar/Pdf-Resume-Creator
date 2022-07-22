@@ -12,7 +12,7 @@ namespace Pdf_Resume_Creator
 {
     public partial class Form1 : Form
     {
-        private readonly string _fileName = @"C:\Users\nathan\source\repos\Pdf-Resume-Creator\ResumeFile.json";
+        private readonly string PathName = @"C:\Users\nathan\source\repos\Pdf-Resume-Creator\ResumeFile.json";
         public Form1()
         {
             InitializeComponent();
@@ -75,9 +75,76 @@ namespace Pdf_Resume_Creator
             public string Certify3 { get; set; }
         }
 
-        private void CnvrtrLbl_Click(object sender, EventArgs e)
-        {
 
+        private void CnvrtrBttn_Click(object sender, EventArgs e)
+        {
+            string JsonFile;
+            using (var reader = new StreamReader(PathName))
+            {
+                JsonFile = reader.ReadToEnd();
+            }
+            var JsonFileResume = JsonConvert.DeserializeObject<Resume>(JsonFile);
+
+            string FirstName = JsonFileResume.FirstName;
+            string LastName = JsonFileResume.LastName;
+            string Current = JsonFileResume.Current;
+
+            string Objective = JsonFileResume.Objective;
+            string Objective1 = JsonFileResume.Objective1;
+            string Objective2 = JsonFileResume.Objective2;
+            string Objective3 = JsonFileResume.Objective3;
+            string Objective4 = JsonFileResume.Objective4;
+            string Objective5 = JsonFileResume.Objective5;
+            string Objective6 = JsonFileResume.Objective6;
+
+            string CollegeYear = JsonFileResume.CollegeYear;
+            string CollegeSchool = JsonFileResume.CollegeSchool;
+
+            string SeniorYear = JsonFileResume.SeniorYear;
+            string SeniorSchool = JsonFileResume.SeniorSchool;
+            string SeniorStrand = JsonFileResume.SeniorStrand;
+            string SeniorAward = JsonFileResume.SeniorAward;
+            string SeniorAward1 = JsonFileResume.SeniorAward1;
+
+            string HSYear = JsonFileResume.HSYear;
+            string HighSchool = JsonFileResume.HighSchool;
+            string HSAward = JsonFileResume.HSAward;
+            string ElemYear = JsonFileResume.ElemYear;
+            string ElemSchool = JsonFileResume.ElemSchool;
+            string ElemAward1 = JsonFileResume.ElemAward1;
+
+            string GitEmail = JsonFileResume.GitEmail;
+            string PersonalNo = JsonFileResume.PersonalNo;
+            string PersonalEmail = JsonFileResume.PersonalEmail;
+            string PersonalAddress = JsonFileResume.PersonalAddress;
+
+            string HardSkills = JsonFileResume.HardSkills;
+            string HSkills1 = JsonFileResume.HSkills1;
+            string HSkills2 = JsonFileResume.HSkills2;
+            string HSkills3 = JsonFileResume.HSkills3;
+            string HSkills4 = JsonFileResume.HSkills4;
+            string HSkills5 = JsonFileResume.HSkills5;
+            string HSkills6 = JsonFileResume.HSkills6;
+            string HSkills7 = JsonFileResume.HSkills7;
+            string HSkills8 = JsonFileResume.HSkills8;
+
+            string SoftSkills = JsonFileResume.SoftSkills;
+            string SSkills1 = JsonFileResume.SSkills1;
+            string SSkills2 = JsonFileResume.SSkills2;
+            string SSkills3 = JsonFileResume.SSkills3;
+            string SSkills4 = JsonFileResume.SSkills4;
+            string SSkills5 = JsonFileResume.SSkills5;
+            string SSkills6 = JsonFileResume.SSkills6;
+
+            string CharRefName = JsonFileResume.CharRefName;
+            string CharRefJob = JsonFileResume.CharRefJob;
+            string CharRefPlace1 = JsonFileResume.CharRefPlace1;
+            string CharRefPlace2 = JsonFileResume.CharRefPlace2;
+            string CharRefNo = JsonFileResume.CharRefNo;
+            string CharRefEmail = JsonFileResume.CharRefEmail;
+            string Certify1 = JsonFileResume.Certify1;
+            string Certify2 = JsonFileResume.Certify2;
+            string Certify3 = JsonFileResume.Certify3;
         }
     }
 }

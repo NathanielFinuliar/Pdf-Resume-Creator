@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.Converterlbl = new System.Windows.Forms.Label();
-            this.CnvrtrLbl = new System.Windows.Forms.Button();
+            this.CnvrtrBttn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Converterlbl
@@ -45,19 +45,19 @@
             this.Converterlbl.TabIndex = 1;
             this.Converterlbl.Text = "RESUME JSON FILE TO PDF";
             // 
-            // CnvrtrLbl
+            // CnvrtrBttn
             // 
-            this.CnvrtrLbl.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.CnvrtrLbl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CnvrtrLbl.Font = new System.Drawing.Font("The Bold Font", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CnvrtrLbl.ForeColor = System.Drawing.Color.White;
-            this.CnvrtrLbl.Location = new System.Drawing.Point(162, 215);
-            this.CnvrtrLbl.Name = "CnvrtrLbl";
-            this.CnvrtrLbl.Size = new System.Drawing.Size(156, 48);
-            this.CnvrtrLbl.TabIndex = 2;
-            this.CnvrtrLbl.Text = "CONVERT";
-            this.CnvrtrLbl.UseVisualStyleBackColor = false;
-            this.CnvrtrLbl.Click += new System.EventHandler(this.CnvrtrLbl_Click);
+            this.CnvrtrBttn.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.CnvrtrBttn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CnvrtrBttn.Font = new System.Drawing.Font("The Bold Font", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CnvrtrBttn.ForeColor = System.Drawing.Color.White;
+            this.CnvrtrBttn.Location = new System.Drawing.Point(173, 209);
+            this.CnvrtrBttn.Name = "CnvrtrBttn";
+            this.CnvrtrBttn.Size = new System.Drawing.Size(156, 48);
+            this.CnvrtrBttn.TabIndex = 2;
+            this.CnvrtrBttn.Text = "CONVERT";
+            this.CnvrtrBttn.UseVisualStyleBackColor = false;
+            this.CnvrtrBttn.Click += new System.EventHandler(this.CnvrtrBttn_Click);
             // 
             // Form1
             // 
@@ -66,7 +66,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(508, 444);
-            this.Controls.Add(this.CnvrtrLbl);
+            this.Controls.Add(this.CnvrtrBttn);
             this.Controls.Add(this.Converterlbl);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
@@ -79,7 +79,7 @@
 
         #endregion
         private System.Windows.Forms.Label Converterlbl;
-        private System.Windows.Forms.Button CnvrtrLbl;
+        private System.Windows.Forms.Button CnvrtrBttn;
     }
 }
 
