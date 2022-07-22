@@ -1,12 +1,12 @@
 ﻿using Newtonsoft.Json;
 using PdfSharp.Drawing;
 using PdfSharp.Pdf;
-using Newtonsoft.Json.Serialization;
-using Newtonsoft.Json.Linq;
 using System;
 using System.Text;
 using System.IO;
 using System.Windows.Forms;
+using Newtonsoft.Json.Serialization;
+using Newtonsoft.Json.Linq;
 
 namespace Pdf_Resume_Creator
 {
@@ -145,6 +145,34 @@ namespace Pdf_Resume_Creator
             string Certify1 = JsonFileResume.Certify1;
             string Certify2 = JsonFileResume.Certify2;
             string Certify3 = JsonFileResume.Certify3;
+
+            using (SaveFileDialog saveFileDialog = new SaveFileDialog())
+            {
+                saveFileDialog.InitialDirectory = @"C:\Users\nathan\Pdf Resume";
+                saveFileDialog.FileName = LastName + " " + FirstName + ".pdf";
+                saveFileDialog.Filter = "PDF|*.pdf";
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    PdfDocument pdf = new PdfDocument();
+                    pdf.Info.Title = LastName + "_" + "Resume";
+                    PdfPage page = pdf.AddPage();
+
+
+                    XGraphics graph = XGraphics.FromPdfPage(page);
+
+                    XFont namefont = new XFont("Circular Std Bold", 30, XFontStyle.Bold);
+                    XFont titlefont = new XFont("Circular Std Bold", 16, XFontStyle.Bold);
+                    XFont infofont = new XFont("Arial", 12, XFontStyle.Regular);
+
+                    XPen shadename = new XPen(XColors.NavajoWhite, 50);
+                    XPen lineR = new XPen(XColors.Brown, 2);
+                    XPen lineL = new XPen(XColors.Brown, 2);
+
+                    pdf.Save(saveFileDialog.FileName);
+                }
+                MessageBox.Show("Your Json File is now converted to PDF!");
+            }
+            Environment.Exit(0);
         }
     }
 }
