@@ -183,7 +183,7 @@ namespace Pdf_Resume_Creator
                     XPen linerleft = new XPen(XColors.Brown, 1); ;
                     XPen linerright = new XPen(XColors.Brown, 1);
 
-                    graph.DrawRoundedRectangle(XBrushes.AntiqueWhite, 0, 0, page.Width.Point, page.Height.Point, 30, 20);
+                    graph.DrawRoundedRectangle(XBrushes.Ivory, 0, 0, page.Width.Point, page.Height.Point, 30, 20);
                     graph.DrawRectangle(pen, 0, 0, page.Width.Point, page.Height.Point);
 
                     int marginS = 425;
@@ -320,7 +320,6 @@ namespace Pdf_Resume_Creator
                 MessageBox.Show("Thanks for using Pdf Resume Converter App! Have a nice day!", "Pdf Resume Converter App", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             Environment.Exit(0);
-
         }
     }
 }
