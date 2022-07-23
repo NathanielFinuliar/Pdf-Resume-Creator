@@ -175,7 +175,7 @@ namespace Pdf_Resume_Creator
 
                     XPen shadename = new XPen(XColors.DarkSeaGreen, 50);
                     XPen lineR = new XPen(XColors.SaddleBrown, 2);
-                    XPen lineL = new XPen(XColors.SaddleBrown, 2); //margin
+                    XPen lineL = new XPen(XColors.SaddleBrown, 2);
 
 
 
@@ -315,6 +315,9 @@ namespace Pdf_Resume_Creator
 
                     pdf.Save(saveFileDialog.FileName);
                 }
+                MessageBox.Show("Your Json File is now converted to PDF!", "Pdf Resume Converter App", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("You can now see your Resume from Json File in PDF Format", "Pdf Resume Converter App", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Thanks for using Pdf Resume Converter App! Have a nice day!", "Pdf Resume Converter App", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             Environment.Exit(0);
 
