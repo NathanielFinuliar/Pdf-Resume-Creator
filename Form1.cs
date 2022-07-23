@@ -184,39 +184,30 @@ namespace Pdf_Resume_Creator
                     XPen linerright = new XPen(XColors.Brown, 1);
 
                     graph.DrawRoundedRectangle(XBrushes.AntiqueWhite, 0, 0, page.Width.Point, page.Height.Point, 30, 20);
-                    //graph.DrawRoundedRectangle(XBrushes.MistyRose, 200, 50, page.Width.Point, page.Height.Point, 100, 100);
                     graph.DrawRectangle(pen, 0, 0, page.Width.Point, page.Height.Point);
 
-                    int marginS = 425;//row movement higher value, right position
+                    int marginS = 425;
 
                     string jpg = @"C:\Users\nathan\Pdf Resume\ProfessionalPhoto.jpg";
                     XImage image = XImage.FromFile(jpg);
                     graph.DrawImage(image, marginS, 30, 135, 180);
-                                                        //(2) width of the picture
 
 
-                    int marginright1 = 400; //row movement higher value, nababawasan pakaliwa yung shade
-                    int initialright1 = 200; //column movment higher value, bumababa
+                    int marginright1 = 400;
+                    int initialright1 = 200;
 
-                                                                               //(1)taas baba  //(2) width from left to right //(3)kapal ng shade from taas to baba
+                                                                            
                     graph.DrawRectangle(shadename, marginright1, initialright1 - 110, -600, 50);
 
-                    int marginT = 25; //lowervalue, nasa kaliwa
+                    int marginT = 25; 
                     int marginT1 = 200;
 
                     graph.DrawString(FullName, namefont, XBrushes.Black, new XRect(marginT, marginT1 - 120, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
                     graph.DrawString(Current, titlefont, XBrushes.Black, new XRect(marginT, marginT1 -80, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
 
-                    //int marginT3 = 470;
-                    //int marginT4 = 200;
 
-                    //graph.DrawString(Current, titlefont, XBrushes.Black, new XRect(marginT3, marginT4 - 90, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
-
-
-
-
-                    int marginL = 35; //width
-                    int marginL1 = 200;//height 
+                    int marginL = 35; 
+                    int marginL1 = 200;
 
 
                     graph.DrawString("EXPERTISE SKILLS", headersfont, XBrushes.Black, new XRect(marginL, marginL1 + 5, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
@@ -263,13 +254,12 @@ namespace Pdf_Resume_Creator
                     graph.DrawString(Sopn, datafont, XBrushes.Black, new XRect(marginL, marginL1 + 523, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
 
 
-                    int marginV = +65; //margin from left
+                    int marginV = +65; 
 
 
                     string png = @"C:\Users\nathan\Pdf Resume\signature.png";
                     XImage imahe = XImage.FromFile(png);
                     graph.DrawImage(imahe, marginV, 680, 65, 50);
-                                                    //(1)vertical  //(2) width  //(height)
 
                     int marginR = 250;
                     int marginR1 = 200;
@@ -287,7 +277,7 @@ namespace Pdf_Resume_Creator
                     graph.DrawString(Objective6, infofont, XBrushes.Black, new XRect(marginR, marginR1 + 120, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
 
 
-                    marginR1 = marginR1 + 130; //space between objectives to education
+                    marginR1 = marginR1 + 130;
 
                     graph.DrawString("EDUCATION", headersfont, XBrushes.Black, new XRect(marginR, marginR1 + 5, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
 
