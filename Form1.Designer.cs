@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.Converterlbl = new System.Windows.Forms.Label();
             this.CnvrtrBttn = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Converterlbl
@@ -59,6 +60,17 @@
             this.CnvrtrBttn.UseVisualStyleBackColor = false;
             this.CnvrtrBttn.Click += new System.EventHandler(this.CnvrtrBttn_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(313, 317);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(141, 71);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -66,6 +78,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(508, 444);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.CnvrtrBttn);
             this.Controls.Add(this.Converterlbl);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -80,6 +93,7 @@
         #endregion
         private System.Windows.Forms.Label Converterlbl;
         private System.Windows.Forms.Button CnvrtrBttn;
+        private System.Windows.Forms.Button button1;
     }
 }
 
