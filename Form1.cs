@@ -191,8 +191,8 @@ namespace Pdf_Resume_Creator
 
                     string jpg = @"C:\Users\nathan\Pdf Resume\ProfessionalPhoto.jpg";
                     XImage image = XImage.FromFile(jpg);
-                    graph.DrawImage(image, marginS, 50, 130, 150);
-                    //(2) width of the picture
+                    graph.DrawImage(image, marginS, 30, 135, 180);
+                                                        //(2) width of the picture
 
 
                     int marginright1 = 400; //row movement higher value, nababawasan pakaliwa yung shade
@@ -327,6 +327,7 @@ namespace Pdf_Resume_Creator
                 }
             }
             Environment.Exit(0);
+
         }
     }
 }
